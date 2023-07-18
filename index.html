@@ -53,8 +53,12 @@
 
                     <hr class="hr2">
                     <h4><a href="#WindowsIso"><img src="./image/arrow.svg" alt="arrow" class="icon-tabler-navigation-filled"> Windows 10 ISO</a></h4>
-                     
+                    
                     <hr class="hr2">
+                    <h4><a href="#WindowsIso"><img src="./image/arrow.svg" alt="arrow" class="icon-tabler-navigation-filled"> VirtualBox Linux Mint</a></h4>
+
+                    <hr class="hr2">
+                    <h4><a href="#Windows"><img src="./image/arrow.svg" alt="arrow" class="icon-tabler-navigation-filled"> VirtualBox Windows 10</a></h4>
                  </div>
             </div>
             <div class="article">
@@ -127,22 +131,80 @@
                             <h2>Mendapatkan ISO Microsoft Windows 10 <button class="btnLink"><img src="./image/link.svg" alt="link" class="linkIcon"></button></h2>
                             <hr>
                             <article>
-                                <p>Linux <a href="https://linuxmint.com/" target="_blank">Mint</a> merupakan distribusi Linux berbasis Debian-Ubuntu yang bertujuan untuk "membuat sistem operasi yang modern, elegan, dan nyaman yang kuat dan mudah dipakai". Dibuat oleh Clement Lefebvre, dan dikembangkan secara aktif oleh tim maupun komunitas yang ada di dalamnya
-                                <br><br>
-                                Pada tutorial kali ini kita akan memakai Linux Mint 21.2 "Victoria". Kita akan menggunakan varian yang paling populernya yaitu "Cinnamon Edition".<br> Berikut cara mendapatkan file ISO Linux Mint:
+                                <p><a href="https://www.microsoft.com/en-us/windows?r=1" target="_blank">Microsoft Windows</a> adalah sistem operasi komputer pribadi yang dikembangkan oleh Microsoft sebagai bagian dari keluarga sistem operasi Windows NT. Pada praktik kali ini kita akan menggunakan Windows 10, yang diperkenalkan pada tanggal 30 September 2014, dirilis pada 29 Juli 2015 dan pada November 2015, Threshold 2 dari Windows 10 dirilis kepada publik.
                                 </p>
                                 <ol>
-                                    <li>Buka link download ISO <a href="https://www.linuxmint.com/edition.php?id=305" target="_blank">Linux Mint 21.2 "Victoria" Cinnamon Edition</a></li>
+                                    <li>Mendapatkan ISO Windows 10 <a href="https://www.linuxmint.com/edition.php?id=305" target="_blank"></a></li>
                                     <div class="penjelasan">
-                                        <img src="./image/So/linux1.PNG" alt="v1">
-                                        <p></p>
+                                        <img src="./image/So/win1.PNG" alt="v1">
+                                        <p>Untuk mendapatkan file ISO pada praktik kali ini kita akan membuatnya dengan <a href="https://www.microsoft.com/en-us/software-download/windows10" target="_blank">Windows Media Creation Tool.</a> Atau bisa juga mendownload langsung melalui website lain seperti <a href="https://www.nesabamedia.com/download-windows-10/download" target="_blank">Nesabamedia</a></p>
                                     </div>
-                                    <li>Scroll kebawah, dan pilih salah satu server untuk digunakan mengunduh file ISO</li>
+                                    <li>Buka Media Creation Tool yang sudah didownload</li>
                                     <div class="penjelasan">
-                                        <img src="./image/So/linux2.PNG" alt="v1">
-                                        <p>Dalam praktik kali ini saya akan menggunakan server Indonesia untuk menguduh file</p>    
+                                        <img src="./image/So/win2.PNG" alt="v1">
+                                        <p>Klik tombol "Accept"</p>    
+                                        <img src="./image/So/win3.PNG" alt="v1">
+                                        <p>Pilih opsi "Create installation media", lalu klik tombol "Next"</p>    
+                                        <img src="./image/So/win4.PNG" alt="v1">
+                                        <p>Pilih opsi "ISO file", lalu klik tombol "Next". Pilih tempat folder untuk menyimpan file ISO</p>    
                                     </div>
-                                    <li>Klik link untuk mengunduh file ISO</li>
+                                    <li>Tunggu hingga prosesnya selesai.</li>
+                                    <div class="penjelasan">
+                                        <img src="./image/So/win5.PNG" alt="v1">
+                                        <p>File ISO sudah terdownload</p>
+                                    </div>
+                                    
+                                </ol>
+                            </article>
+                        </div>
+                    </section><br><br>
+                    <section id="Mint">
+                        <div class="header">
+                            <h2>Menggunakan Linux Mint dengan VirtualBox <button class="btnLink"><img src="./image/link.svg" alt="link" class="linkIcon"></button></h2>
+                            <hr>
+                            <article>
+                                <p>Sebelum memulai, pastikan anda sudah menginstall aplikasi VirtualBxx dan file ISO untuk Linux Mint. jika belum, anda bisa mengikuti bagian ini untuk menginstall <a href="#VboxInstall">VirtualBox</a> dan <a href="MintIso">Linux Mint</a> terlebih dahulu.</p>
+                                <ol>
+                                    <li>Buka aplikasi VirtualBox</li>
+                                    <div class="penjelasan">
+                                        <img src="./image/So/linux3.PNG" alt="v1">
+                                        <p>Buat mesin baru dengan mengklik tombol "new" atau melalui opsi "Machine->New", atau bisa juga dengan menekan shortcut <code>ctrl + N</code></p>
+
+                                        <img src="./image/So/linux4.PNG" alt="v1">
+                                        <p>Masukkan kolom name dengan nama yang kalian inginkan, disini saya menggunakan nama "LinuxMint". Lalu masukkan file ISO yang sudah kalian buat. Klik "Next"</p>
+                                        <img src="./image/So/linux5.PNG" alt="v1">
+                                        <p>Klik "Next"</p>
+                                        <img src="./image/So/linux6.PNG" alt="v1">
+                                        <p>Masukkan jumlah RAM dan jumlah CPU yang akan digunakan, contohnya disini saya menggunakan 4 GB RAM dengan 2 CPUs. Sesuaikan dengan spesifikasi mesin yang anda miliki. Lalu klik "Next"</p>
+                                        <img src="./image/So/linux7.PNG" alt="v1">
+                                        <p>Masukkan jumlah storage yang akan digunakan, disini saya memberikan storage minimal yaitu sebesar 10 GB. Lalu klik "Next"</p>
+                                    </div>
+                                    <li>Menjalankan Linux Mint</li>
+                                    <div class="penjelasan">
+                                        <img src="./image/So/linux10.PNG" alt="v1">
+                                        <p>Jika Mint sudah termuat, gunakan tombol panah untuk mengganti opsi dan enter untuk memilih opsi. Pilih opsi "Start Linux Mint ..." untuk melanjutkan proses booting ke Linux Mint</p>
+                                    </div>
+                                    <li>Selesai</li>
+                                    <div class="penjelasan">
+                                        <img src="./image/So/linux11.PNG" alt="v1">
+                                        <p>Berhasil booting ke Linux Mint dan Virtual Machine sudah bisa digunakan!</p>
+                                    </div>
+                                </ol>
+                            </article>
+                        </div>
+                    </section><br><br>
+                    <section id="Windows">
+                        <div class="header">
+                            <h2>Menggunakan Windows 10 dengan VirtualBox <button class="btnLink"><img src="./image/link.svg" alt="link" class="linkIcon"></button></h2>
+                            <hr>
+                            <article>
+                                <p>Sebelum memulai, pastikan anda sudah menginstall aplikasi VirtualBxx dan file ISO untuk Windows 10. jika belum, anda bisa mengikuti bagian ini untuk menginstall <a href="#VboxInstall">VirtualBox</a> dan <a href="WindowsIso">ISO Windows 10</a> terlebih dahulu.</p>
+                                <ol>
+                                    <li>Buka aplikasi VirtualBox</li>
+                                    <div class="penjelasan">
+                                        <img src="" alt="v1">
+                                        <p><code>WORK IN PROGRESS</code></p>
+                                    </div>
                                 </ol>
                             </article>
                         </div>
@@ -154,9 +216,6 @@
     </div>
     
     <script src="script.js"></script>
-    <!-- Optional JavaScript -->
-    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-    <!-- <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script> -->
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.14.7/dist/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
   </body>

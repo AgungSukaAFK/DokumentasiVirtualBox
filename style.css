@@ -136,7 +136,7 @@ hr {
     margin: 5% auto;
     padding: 70px;
     width: 70%;
-    height: 90%;
+    height: auto;
     background-color: #3F2E3E;
     box-shadow: 0px 30px 40px rgba(0, 0, 0, .6);
 }
@@ -173,4 +173,10 @@ section p {
 
 ol li {
     font-size: 20px;
+}
+
+code {
+    display: inline-block;
+    padding: 3px;
+    background-color: #231d22;
 }
