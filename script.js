@@ -1,4 +1,4 @@
-// window.scrollTo(0,0)
+window.scrollTo(0,0)
 
 const height = window.innerHeight;
 
