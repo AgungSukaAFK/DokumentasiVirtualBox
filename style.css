@@ -70,7 +70,7 @@ hr {
 }
 
 .landing {
-    /* width: 100%; */
+    width: 100%;
     background-color: gray;
     height: 100vh;
 }
@@ -179,4 +179,20 @@ code {
     display: inline-block;
     padding: 3px;
     background-color: #231d22;
+}
+
+.footer {
+    background-color:   #001C30;
+    border: none;
+    box-shadow: none;
+    filter: none;
+    height: 80px;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.svgWhite {
+    filter: invert(100%) sepia(100%) saturate(2%) hue-rotate(141deg) brightness(102%) contrast(101%);
 }
