@@ -121,6 +121,7 @@ hr {
 }
 
 .teks {
+    border: 3px solid white;
     text-align: center;
     margin: auto;
     width: 50vw;
@@ -134,7 +135,7 @@ hr {
 .contentBox {
     border-radius: 20px;
     margin: 5% auto;
-    padding: 70px;
+    padding: 5%;
     width: 70%;
     height: auto;
     background-color: #3F2E3E;
@@ -203,5 +204,19 @@ code {
     }
     .article {
         width: 100%;
+    }
+    .contentBox {
+        padding: 3%;
+        width: 90%;
+    }
+
+    .teks {
+        width: 100%;
+    }
+    .teks h1 {
+        font-size: 24px;
+    }
+    .content {
+        padding: 0;
     }
 }
