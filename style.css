@@ -196,3 +196,12 @@ code {
 .svgWhite {
     filter: invert(100%) sepia(100%) saturate(2%) hue-rotate(141deg) brightness(102%) contrast(101%);
 }
+
+@media screen and (max-width: 960px){
+    .sidebar {
+        display: none
+    }
+    .article {
+        width: 100%;
+    }
+}
